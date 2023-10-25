@@ -41,3 +41,26 @@ Swap
 ```
 
 Repeat
+
+```
+function selectionSort(array){
+    debugger;
+    for (let i = 0; i < array.length; i++) {
+        let minimumValueIndex = i;
+        for (let j = i; j < array.length; j++) {
+            if(array[minimumValueIndex] > array[j])
+            {
+                minimumValueIndex = j;
+            }
+        }
+        const temp = array[i];
+        array[i] = array[minimumValueIndex];
+        array[minimumValueIndex] = temp;
+       
+    }
+    return array
+}
+
+
+selectionSort([5,3,4,1,2]);
+```
