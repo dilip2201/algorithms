@@ -1,14 +1,21 @@
+# 1. Bubble Sort
+
+![Bubble Sort](https://favtutor.com/resources/images/uploads/mceu_61632030011682402256084.png)
+
+
+
+```
 function bubbleSort(array){
     for (let i = array.length - 1; i >= 0; i--) {
         let noSwap = true;
-       for (let j = 0; j <= i; j++) {
-           if(array[j] > array[j+1]){
+        for (let j = 0; j <= i; j++) {
+            if(array[j] > array[j+1]){
                 noSwap = false;
                 const temp = array[j]
                 array[j] = array[j+1]
                 array[j+1] = temp;
             }
-       }
+        }
         if(noSwap){
             break;
         }
@@ -16,5 +23,7 @@ function bubbleSort(array){
     return array;
 }
 
-
 bubbleSort([18,2,9,1,38,44,32,45,90,54])
+```
+
+
