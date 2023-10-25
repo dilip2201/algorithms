@@ -1,10 +1,10 @@
 # 2. Selection Sort
 
 
-i = 0
-1) Select first element(5) 
-2) find minimun value(1) from rest Array
-3) Swap
+>index = 0
+>1) Select first element(5) 
+>2) find minimun value(1) from rest Array
+>3) Swap
 ```
 [5,3,4,1,2] first = 5, min = 3
  ^ ^
@@ -22,10 +22,10 @@ Swap
 [1,3,4,5,2]
 ```
 
-i = 1
-1) Select first element(3) 
-2) find minimun value(2) from rest Array
-3) Swap
+>index = 1
+>1) Select first element(3) 
+>2) find minimun value(2) from rest Array
+>3) Swap
 
 ```
 [1,3,4,5,2] first = 3, min = 3
@@ -41,3 +41,26 @@ Swap
 ```
 
 Repeat
+
+```
+function selectionSort(array){
+    debugger;
+    for (let i = 0; i < array.length; i++) {
+        let minimumValueIndex = i;
+        for (let j = i; j < array.length; j++) {
+            if(array[minimumValueIndex] > array[j])
+            {
+                minimumValueIndex = j;
+            }
+        }
+        const temp = array[i];
+        array[i] = array[minimumValueIndex];
+        array[minimumValueIndex] = temp;
+       
+    }
+    return array
+}
+
+
+selectionSort([5,3,4,1,2]);
+```
