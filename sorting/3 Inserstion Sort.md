@@ -20,9 +20,9 @@ I = 1;
 Finally assign currentValue to J ---> array[j] = currentValue
 [2,5,4,3,2,9,10] -> j = 0
 ```
-let take this [2,5,4,3,2,9,10]
+let take this `[2,5,4,3,2,9,10]`
 
-
+```
 I = 2;
 1) Select I value currentValue(4)
 [2,5,4,3,2,9,10]
@@ -38,10 +38,11 @@ I = 2;
 
 Finally assign currentValue to J ---> array[j] = currentValue
 [2,4,5,3,2,9,10] -> j = 0
+```
 
 
-
-let take this [2,4,5,3,2,9,10]
+let take this `[2,4,5,3,2,9,10]`
+```
 I = 3;
 1) Select I value currentValue(3)
 [2,4,5,3,2,9,10]
@@ -65,3 +66,4 @@ I = 3;
 Finally assign currentValue to J ---> array[j] = currentValue
 [2,3,4,5,2,9,10] -> j = 1
    ^
+```
