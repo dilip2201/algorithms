@@ -67,3 +67,23 @@ Finally assign currentValue to J ---> array[j] = currentValue
 [2,3,4,5,2,9,10] -> j = 1
    ^
 ```
+
+
+**Final Algorithm **
+
+```
+function insertionSort(array){
+    debugger;
+    for (let i = 1; i < array.length; i++) {
+        const currentVal = array[i];
+        for (var j = i-1; j >= 0 && currentVal < array[j]; j--) {
+            array[j+1] = array[j];
+        }
+        array[j+1] = currentVal;
+    }
+    return array;
+}
+
+
+insertionSort([5,7,8,3,2,9,10])
+```
