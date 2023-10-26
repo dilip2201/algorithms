@@ -2,15 +2,19 @@
 
 
 Step 1) Select 1st Index of array and set to the correct position
->[10,12,8,5,25,23,3,4]
-> ^
+```
+[10,12,8,5,25,23,3,4]
+ ^
+```
 
 >index = 0;
 compare with every element if value is less than swap. finally swap to current position
 
 after swaping
->[3,4,8,5,10,12,25,23]
+```
+[3,4,8,5,10,12,25,23]
 		  ^
+```
 Repeat for left(0 index to 4) and right (6 index to 8)
 
 ```
