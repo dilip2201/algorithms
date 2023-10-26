@@ -13,7 +13,7 @@ compare with every element if value is less than swap. finally swap to current p
 after swaping
 ```
 [3,4,8,5,10,12,25,23]
-		  ^
+          ^
 ```
 Repeat for left(0 index to 4) and right (6 index to 8)
 
