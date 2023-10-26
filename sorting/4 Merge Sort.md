@@ -78,7 +78,6 @@ merge([1,2,5,9,10],[2,4,6,8,11,12,13]);
 ## B Split array into left right and merge
 ```
 function mergeSort(array){
-    debugger;
     if(array.length <= 1) return array;
     let mid = Math.floor(array.length/2);
     let left = mergeSort(array.slice(0,mid));
