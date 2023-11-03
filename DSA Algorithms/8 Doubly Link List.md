@@ -81,6 +81,33 @@ class DoublyLinkList{
 			
 		}
 	}
+	insert(val,index){
+		if(index < 0 || index > this.length) return false;
+		if(index === 0) return this.unshift(val);
+		if(index == this.length) this.push(val);
+		var newNode = new node(val);
+		if(!this.head){
+			this.head = newNode;
+			this.tail = this.head
+		}else{
+			var current = this.get(index - 1);
+			newNode.next = current.next;
+			current.next.prev = newNode;
+			newNode.prev = current;
+			current.next = newNode;
+		}
+		this.length++;
+	}
+
+	remove(index){
+		if(index < 0 || index > this.length) return false;
+		if(index === 0) return this.shift();
+		if(index == this.length) this.pop();
+		var removeNode = this.get(index);
+		removeNode.prev.next = removeNode.next;
+		removeNode.next.prev = removeNode.prev;
+		
+	}
 }
 
 var list = new DoublyLinkList;
