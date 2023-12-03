@@ -1,4 +1,4 @@
-#8 Chunk array into given size
+# 8 Chunk array into given size
 
 ```
 function chunkArray(array,size) {

@@ -1,4 +1,4 @@
-#6 Integer Reverse
+# 6 Integer Reverse
 
 ```
 function reverse(x) {

@@ -1,4 +1,4 @@
-#7 Find Maximum char from string.
+# 7 Find Maximum char from string.
 
 ```
 function maxChar(string) {
